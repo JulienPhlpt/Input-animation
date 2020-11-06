@@ -4,28 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Input animation</title>
   </head>
 
   <body>
     <h1>Input Animation</h1>
-    <div class="form name-form">
-      <input type="text" name="name" autocomplete="on" required />
-      <label for="name" class="label-name">
-        <span class="content-name">Name</span>
-      </label>
-    </div>
-    <div class="form number-form">
-      <input type="text" name="number" autocomplete="off" required />
-      <label for="name" class="label-name">
-        <span class="content-name">Phone number</span>
-      </label>
-    </div>
-    <div class="form email-form">
-      <input type="text" name="email" autocomplete="off" required />
-      <label for="email" class="label-name">
-        <span class="content-name">Email</span>
-      </label>
+    <div class="form">
+      <div class="form-label">
+        <label for="name" class="label-name">
+          <input
+            type="text"
+            name="name"
+            placeholder="&nbsp;"
+            autocomplete="on"
+            required
+          />
+          <span class="label">Name</span>
+          <span class="focus-bg"></span>
+        </label>
+      </div>
+
+      <div class="form-label">
+        <label for="email" class="label-name">
+          <input
+            type="email"
+            name="email"
+            placeholder="&nbsp;"
+            autocomplete="on"
+            required
+          />
+          <span class="label">Email</span>
+          <span class="focus-bg"></span>
+        </label>
+      </div>
+
+      <div class="form-label">
+        <label for="password" class="label-name">
+          <input
+            type="password"
+            name="password"
+            placeholder="&nbsp;"
+            autocomplete="on"
+            required
+          />
+          <span class="label">Password</span>
+          <span class="focus-bg"></span>
+        </label>
+      </div>
+      <div class="submit">
+        <input type="submit" value="Envoyer" />
+      </div>
     </div>
   </body>
 </html>
